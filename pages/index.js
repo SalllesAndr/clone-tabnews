@@ -11,7 +11,7 @@ function Home() {
       <p>
         Bem-vindo ao meu primeiro projeto desenvolvido durante o curso da
         Curso.Dev!
-      </p>
+      </p> 
       <p>
         Confira mais sobre mim no meu{' '}
         <a
