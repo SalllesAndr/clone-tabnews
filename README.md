@@ -11,15 +11,14 @@ Este repositório contém o código-fonte do site e da API do **TabNews Clone**.
 ## Índice
 
 - [Rodar o Projeto](#rodar-o-projeto)
-- [Cadastro e Login de Usuários](#cadastro-e-login-de-usuarios)
+- [Cadastro e Login de Usuários](#cadastro-e-login-de-usuários)
   - [Criar um Usuário Manualmente](#criar-um-usuário-manualmente)
   - [Utilizar Usuários Pré-Cadastrados](#utilizar-usuários-pré-cadastrados)
 - [Rodar os Testes](#rodar-os-testes)
   - [Executar Todos os Testes](#executar-todos-os-testes)
-  - [Testes em Modo Watch](#testes-em-modo-watch)
   - [Executar Testes Específicos](#executar-testes-específicos)
 - [Como Contribuir](#como-contribuir)
-- [Licença](#licenca)
+- [Licença](#licença)
 
 ---
 
@@ -52,51 +51,72 @@ Execute o comando abaixo para iniciar o projeto:
 
 ```bash
 npm run dev
+```
 
 Isso irá iniciar automaticamente os seguintes serviços:
 
-Banco de Dados (incluindo as migrations)
-Servidor de E-mail
-Serviço Web (Frontend e API) nos seguintes endereços:
-Frontend: http://localhost:3000/
-API: http://localhost:3000/api/v1/status
-Observações:
-Para encerrar os serviços, pressione CTRL+C.
-Para verificar as configurações dos serviços (como Banco de Dados ou Servidor de E-mail), consulte o arquivo .env na raiz do projeto.
-Cadastro e Login de Usuários
-Criar um Usuário Manualmente
-Acesse http://localhost:3000/cadastro.
-Preencha os dados com qualquer e-mail válido (mesmo que fictício, como teste@teste.com).
-O servidor enviará um e-mail para o servidor local, acessível em http://localhost:1080/.
-Abra o e-mail de ativação e clique no link para ativar a conta.
-Faça login com as credenciais em http://localhost:3000/login.
-Utilizar Usuários Pré-Cadastrados
-Ao rodar o comando npm run dev, dois usuários já ativados serão criados automaticamente:
+- Banco de Dados (incluindo as migrations)
+- Servidor de E-mail
+- Serviço Web (Frontend e API) nos seguintes endereços:
+  - Frontend: [http://localhost:3000/](http://localhost:3000/)
+  - API: [http://localhost:3000/api/v1/status](http://localhost:3000/api/v1/status)
 
-Usuário Admin:
+**Observações:**
 
-E-mail: admin@admin.com
-Senha: password
-Usuário Padrão:
+- Para encerrar os serviços, pressione `CTRL+C`.
+- Para verificar as configurações dos serviços (como Banco de Dados ou Servidor de E-mail), consulte o arquivo `.env` na raiz do projeto.
 
-E-mail: user@user.com
-Senha: password
-Rodar os Testes
+## Cadastro e Login de Usuários
+
+### Criar um Usuário Manualmente
+
+1. Acesse [http://localhost:3000/cadastro](http://localhost:3000/cadastro).
+2. Preencha os dados com qualquer e-mail válido (mesmo que fictício, como <teste@teste.com>).
+3. O servidor enviará um e-mail para o servidor local, acessível em [http://localhost:1080/](http://localhost:1080/).
+4. Abra o e-mail de ativação e clique no link para ativar a conta.
+5. Faça login com as credenciais em [http://localhost:3000/login](http://localhost:3000/login).
+
+### Utilizar Usuários Pré-Cadastrados
+
+Ao rodar o comando `npm run dev`, dois usuários já ativados serão criados automaticamente:
+
+**Usuário Admin:**
+
+- E-mail: <admin@admin.com>
+- Senha: password
+
+**Usuário Padrão:**
+
+- E-mail: <user@user.com>
+- Senha: password
+
+## Rodar os Testes
+
 Certifique-se de rodar os testes antes de qualquer alteração no código para garantir que tudo está funcionando conforme esperado.
 
-Executar Todos os Testes
+### Executar Todos os Testes
+
 Rode o comando abaixo para executar os testes:
 
-Executar Testes Específicos
+```bash
+npm test
+```
+
+### Executar Testes Específicos
+
 Você também pode rodar testes específicos, filtrando pelo caminho do arquivo. Exemplos:
 
+```bash
+npm test -- tests/arquivoEspecifico.test.js
+```
 
-Como Contribuir
+## Como Contribuir
+
 Contribuições são bem-vindas! Para contribuir:
 
-Faça um fork do repositório.
-Abra um Pull Request explicando as mudanças.
-Licença
-Copy code
+1. Faça um fork do repositório.
+2. Abra um Pull Request explicando as mudanças.
 
-```
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).

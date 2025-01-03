@@ -15,13 +15,15 @@ function Home() {
       <p>
         Confira mais sobre mim no meu{' '}
         <a
-          href="https://www.linkedin.com/in/anderson-p-sales-/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: '#0072b1', textDecoration: 'none' }}
-        >
-          LinkedIn
-        </a>{' '}
+  href="https://www.linkedin.com/in/anderson-p-sales-/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ color: '#0072b1', textDecoration: 'none' }}
+  title="Acesse meu LinkedIn"
+>
+  LinkedIn
+</a>
+{' '}
         ou veja outros projetos no meu{' '}
         <a
           href="https://github.com/SalllesAnd"

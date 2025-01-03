@@ -1,4 +1,4 @@
-const calculator = require('../../src/models/calculator');
+const calculator = require('/home/sallesp/Documents/ROADMAP-STUDY/DEV/CURSO_DEV/clone-tabnews/src/models/calculator.js');
 
 test("somar 2 + 2 = 4", () => {
   const result = calculator.somar(2, 2);
